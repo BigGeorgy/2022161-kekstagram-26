@@ -20,3 +20,4 @@ function stringLength (stringTest, maxStringLength){
   }
 }
 stringLength('длина комментария не может составлять больше 140 символов', 140);
+
