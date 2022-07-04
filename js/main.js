@@ -1,23 +1,22 @@
-function randomNumber(min, max){
+function returnRandomNumber(min, max){
   if(max>min&&min>=0){
-  const r = Math.random()*(max-min) + min
-  return Math.floor(r)
+    const r = Math.random()*(max-min) + min;
+    return Math.floor(r);
   }
   else{
-    console.log('Ошибка в диапазоне')
+    return 'none';
   }
 }
 
-randomNumber(0, 100)
-console.log(randomNumber)
+returnRandomNumber(0, 100);
 
 
 function stringLength (stringTest, maxStringLength){
-if (stringTest.length<=maxStringLength){
-  console.log('True')
+  if (stringTest.length<=maxStringLength){
+    return true;
+  }
+  else {
+    return false;
+  }
 }
-else {
-  console.log('False')
-}
-}
-stringLength('длина комментария не может составлять больше 140 символов', 140)
+stringLength('длина комментария не может составлять больше 140 символов', 140);
