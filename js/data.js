@@ -91,6 +91,5 @@ const createCards = function(count) {
   return data;
 };
 
-createCards(CARDS_COUNT);
 export {createCards};
 export {CARDS_COUNT};
